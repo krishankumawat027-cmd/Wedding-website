@@ -1,42 +1,106 @@
-# Welcome to your Lovable project
+Wedding Invitation Website
 
-This project was built with [Lovable](https://lovable.dev).
+A beautiful digital wedding invitation website for Khushboo & Shekhar.
 
-## Build with Lovable
+Wedding Details
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+- Bride: Khushboo
+- Groom: Shekhar
+- Location: Shrimadhopur, Sikar, Rajasthan
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+Development
 
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm install
 npm run dev
-```
 
-## Built with
+Built With
 
 - TanStack Start
 - TypeScript
 - React
 - Tailwind CSS
 
-## Wedding invitation placeholders
+Wedding Gallery
 
-- Replace the illustrative gallery images in `src/assets/` and update the `gallery` array in `src/routes/index.tsx` with real, consented photos.
-- Replace the sample audio at `public/music/wedding.mp3` with your own licensed wedding music; keep the filename or update the audio source in `src/routes/index.tsx`.
-- Update the exact venue and address in the venue section once confirmed. The current map link points only to Shrimadhopur.
-- Wedding Blessings is a preview-only interaction. Blessings are not delivered or saved; connect a backend before sharing the site as a live wishes collection tool.
-- The venue QR code lives at public/images/location-qr.png, copied unmodified. Set VENUE_MAP_URL in src/routes/index.tsx to change where Get Directions points.
+Replace the sample gallery images in:
 
-## Venue QR code
+src/assets/
 
-- The uploaded venue QR image goes at `public/images/location-qr.png`, copied unmodified (no cropping, resizing or recoloring) — it then appears automatically in the Venue section. Until then a "QR code coming soon" placeholder shows.
-- Set `VENUE_MAP_URL` near the top of `src/routes/index.tsx` to the real Google Maps link (e.g. the QR code destination) to enable the "Get Directions" button; until then it stays disabled.
+with real, consented wedding photos.
+
+Update the gallery array in:
+
+src/routes/index.tsx
+
+when adding or removing photos.
+
+Wedding Music
+
+Replace:
+
+public/music/wedding.mp3
+
+with the desired licensed wedding music.
+
+Keep the same filename, or update the audio source in:
+
+src/routes/index.tsx
+
+Venue & Location
+
+Update the confirmed venue name and complete address in the venue section.
+
+Set the Google Maps destination in:
+
+src/routes/index.tsx
+
+using:
+
+VENUE_MAP_URL
+
+The Get Directions button will use this link.
+
+Location QR Code
+
+Place the venue QR code at:
+
+public/images/location-qr.png
+
+The QR code will automatically appear in the Venue section.
+
+Wedding Events
+
+Update the wedding events, dates, timings and venue details in:
+
+src/routes/index.tsx
+
+Current events include:
+
+- Lagan Tika
+- Haldi
+- Mehndi
+- Sangeet
+
+Wedding Blessings
+
+The Wedding Blessings section is currently a preview interaction.
+
+To save and display real guest blessings, connect a backend/database and store the submitted messages securely.
+
+Customization
+
+All major wedding content can be updated from:
+
+src/routes/index.tsx
+
+including:
+
+- Couple names
+- Wedding dates
+- Event details
+- Venue
+- Google Maps link
+- Gallery
+- Music
+- Wedding messages
+- Other invitation content
